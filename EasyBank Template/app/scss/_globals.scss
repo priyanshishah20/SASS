@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: $font18;
+    color: $GrayishBlue;
+    font-weight: 300;
+    overflow-x: hidden;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+
+    @include break-up(large) {
+        font-size: $font20;
+    }
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+
+    &-jc{
+        justify-content: center;
+    }
+    &-jb{
+        justify-content: space-between;
+    }
+    &-ac{
+        align-items: center;
+    }
+}
+h1, h2, h3{
+    color: $DarkBlue;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-top: 0px;
+}
+h1{
+    font-size: 2.31rem; 
+    margin-bottom: 1.5rem;
+    @include break-up(large) {
+        font-size: $font52;
+    }
+}
+h2{
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include break-up(large) {
+        font-size: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+p{
+    // font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+}
+a, a:visited{
+    text-decoration: none;
+}
+button, .button{
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    background: $Linearbackground;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    color: $White;
+    font-size: $font14;
+    // transition: opacity 300ms ease-in-out;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+.container{
+    max-width: 69.375rem;
+    margin: 0 auto;
+    
+    &-pall{
+        padding-inline: 1.5rem;
+        padding-block: 4.375rem;
+
+        @include break-down(large) {
+            padding-block: 6rem;
+        }
+    }
+    &-pt{
+        padding-top: 4.375rem;
+
+        @include break-down(large) {
+            padding-top: 6rem;
+        }
+    }
+    &-pb{
+        padding-bottom: 4.375rem;
+
+        @include break-down(large) {
+            padding-bottom: 6rem;
+        }
+    }
+    &-pr{
+        padding-right: 1.5rem;
+    }
+    &-pl{
+        padding-left: 1.5rem;
+    }
+    &-py{
+        padding-block: 4.375rem;
+
+        @include break-down(large) {
+            padding-block: 6rem;
+        }
+    }
+    &-px{
+        padding-inline: 1.5rem;
+    }
+}
+
+.hide-mobile{
+    @include break-down(medium) {
+        display: none;
+    }
+}
+
+.hide-desktop{
+    @include break-up(large) {
+        display: none;
+    }
+}
