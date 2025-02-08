@@ -1,0 +1,36 @@
+.contact{
+    height: 100%;
+    padding-top: 30vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:
+    linear-gradient(to right,
+    rgba($primaryclr, 0.9),
+    rgba($primaryclr, 0.3)
+    ), 
+    url('../img/pic.png') center top;
+    background-size: cover;
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.1rem;
+
+        .fa{
+            padding-right: 0.4rem;
+        }
+    }
+
+    // .social-icons{
+    //     position: initial;
+    //     margin-top: 2rem;
+    // }
+}
