@@ -1,0 +1,509 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(128, 208, 199);
+  z-index: 999;
+  transition: 0.3s all ease-in-out;
+}
+
+.sec1 {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.sec1 .sec1-main {
+  padding-top: 8rem;
+}
+.sec1 .sec1-main .sec1-text {
+  font-size: 1.4rem;
+  color: #13547a;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+.sec1 .sec1-main .searchDiv {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.sec1 .sec1-main .searchDiv span {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+.sec1 .sec1-main .searchDiv input {
+  border: 0;
+  box-shadow: none;
+  width: 70%;
+}
+.sec1 .sec1-main .searchDiv input:focus-visible {
+  outline: 0;
+}
+
+.bi-back {
+  font-size: 1.75rem;
+  color: #212529;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #212529 !important;
+  display: block;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 208, 199, 0.35);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-block: 0.5rem;
+  position: fixed;
+  width: 100%;
+}
+.mainNav ul {
+  display: flex;
+  margin: 1rem 5rem;
+}
+.mainNav ul li a {
+  color: #fff;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.mainNav ul li .nav-active,
+.mainNav ul li a:hover {
+  color: #13547a;
+  font-weight: 500;
+}
+
+.icon {
+  display: block;
+}
+.icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #717275;
+}
+.icon a .fa {
+  font-size: 1.1rem;
+}
+
+.icon a:hover,
+.btn-learnmore:hover {
+  background: #13547a;
+}
+
+.icon a:hover .fa,
+.btn-learnmore:hover {
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.sec3,
+.sec4,
+.sec5,
+.sec6,
+.sec7 {
+  padding-block: 6rem;
+}
+
+.sec2 {
+  background: rgb(128, 208, 199);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.boxshadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card {
+  border-radius: 1.25rem;
+  border: 0;
+  transition: all 0.3s ease;
+}
+.card .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card .card-text {
+  color: #717275;
+  font-size: 1.1rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-body,
+.card-img-overlay {
+  padding: 1.5rem;
+}
+
+.btn-learnmore {
+  border-radius: 50px;
+  background: rgb(128, 208, 199);
+  color: #fff;
+  padding: 0.65rem 1.25rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  padding-top: 7.5rem;
+}
+.social-icons ul li {
+  padding: 0.5rem;
+}
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(128, 208, 199);
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background: #13547a;
+}
+.social-icons .fa {
+  color: #fff;
+}
+.social-icons .fa-bookmark-o {
+  font-size: 1.6rem;
+}
+
+.cardstart {
+  position: relative;
+  top: -7rem;
+}
+
+.sec-bg {
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  border-radius: 1.25rem;
+}
+
+.sec3 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ecf3f2;
+  margin-bottom: 2rem;
+}
+.sec3 ul button {
+  padding: 1rem 1.5rem;
+  color: #717275;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background: inherit;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.sec3 ul button:hover,
+.sec3 ul .active {
+  color: #13547a;
+  border-bottom: 1px solid #13547a;
+}
+.sec3 .card {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  text-align: left;
+}
+.sec3 .img-block {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 1.5rem;
+}
+.sec3 .social-icons {
+  padding-top: 3.5rem;
+}
+
+.sec4 {
+  background-image: url("img/sec4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.sec4 .sec-bg {
+  border-radius: 0;
+}
+.sec4 .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.sec4 .container .workicon {
+  background-color: rgb(128, 208, 199);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.sec4 .container .workicon i {
+  padding: 1.2rem;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.sec4 .container .workicon:hover {
+  background-color: #13547a;
+}
+.sec4 .container .work-info {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+.sec4 .container .work-info h5 {
+  font-size: 1.85rem;
+  margin-bottom: 0.8rem;
+}
+.sec4 .container .work-info p {
+  font-size: 1.15rem;
+}
+.sec4 .container .worklink {
+  display: inline-block;
+}
+.sec4 .container .worklink span {
+  font-size: 1.2rem;
+}
+.sec4 .container .worklink button {
+  border: 2px solid rgb(128, 208, 199);
+  background: transparent;
+  color: rgb(128, 208, 199);
+}
+.sec4 .container .worklink button:hover {
+  background-color: rgb(128, 208, 199);
+  color: #fff;
+}
+
+.accordion-item .accordion-button,
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 50px;
+}
+
+.accordion-body {
+  color: #717275;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #13547a;
+}
+
+.sec6 {
+  background-color: #f0f8ff;
+}
+.sec6 h2 {
+  text-align: center;
+}
+.sec6 h3 {
+  padding-bottom: 1rem;
+}
+.sec6 p {
+  color: #717275;
+  font-size: 1.2rem;
+}
+.sec6 p a {
+  color: rgb(128, 208, 199);
+}
+
+.sec7 {
+  border-bottom: 10px solid rgb(128, 208, 199);
+  position: relative;
+}
+.sec7 h4 {
+  color: #13547a;
+}
+.sec7 a {
+  color: rgb(128, 208, 199);
+}
+.sec7 a:hover {
+  color: #717275;
+}
+.sec7 .container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 0 150px 150px;
+  border-color: transparent transparent rgb(128, 208, 199) transparent;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+  .mainNav ul {
+    margin: 1rem;
+  }
+  .mainNav ul li a {
+    font-size: 0.8rem;
+    margin: 0 0.4rem;
+  }
+  .logo, .bi-back {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .sec3, .sec4, .sec5, .sec6, .sec7 {
+    padding-block: 4rem;
+  }
+  .sec1 .sec1-main .sec1-text {
+    font-size: 1.2rem;
+  }
+  .sec1 .sec1-main .searchDiv {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .btn-learnmore {
+    padding: 0.5rem 1rem;
+  }
+  .social-icons {
+    padding-top: 5rem;
+  }
+  .social-icons a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  .sec3 ul button {
+    font-size: 1rem;
+  }
+  .sec3 .img-block {
+    margin-top: 1rem;
+    height: 170px;
+  }
+  .sec3 .social-icons {
+    padding-top: 2rem;
+  }
+  .card .card-title {
+    font-size: 1.1rem;
+  }
+  .card .card-text {
+    font-size: 0.9rem;
+  }
+  .sec4 .container .work-info h5 {
+    font-size: 1.5rem;
+  }
+  .sec4 .container .work-info p {
+    font-size: 1rem;
+  }
+  .accordion-item .accordion-button,
+  .accordion-item:first-of-type .accordion-button {
+    font-size: 1.1rem;
+  }
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+  .sec6 h3 {
+    margin-top: 1rem;
+  }
+  .sec6 p {
+    font-size: 1rem;
+  }
+  .sec7 .row .col-md-6 {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
