@@ -1,0 +1,674 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-size: 10px; */
+}
+
+:root {
+    --primary-bg: #0f2453;
+    --secondary-bg: #ffce14;
+    --white: #fff;
+    --grey: #edeff2;
+    --border-clr: #cfdbf3;
+    --font-family1: 'Oswald', sans-serif;
+    --font-family2: 'Federo', sans-serif;
+}
+
+.side-padding {
+    padding: 6rem 4rem;
+}
+
+.sub-heading {
+    margin-bottom: 2rem;
+    color: var(--primary-bg);
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: var(--font-family1);
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+.social-links {
+    margin-left: 0.5rem;
+}
+
+.navbar {
+    padding: 0.2rem 0;
+}
+
+.social-bg:nth-child(1) {
+    background-color: #4d669c;
+}
+
+.social-bg:nth-child(2) {
+    background-color: #1da1f2;
+}
+
+.social-bg:nth-child(3) {
+    background-color: #d34836;
+}
+
+.social-links .nav-item {
+    margin-inline: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.social-links .nav-link {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links .navbar-nav .fa {
+    color: #fff;
+    text-align: center;
+}
+
+.contact-links {
+    padding: 0;
+}
+
+.contact-links ul li a {
+    color: black;
+}
+
+.search-icon {
+    width: 5rem;
+    background: var(--secondary-bg);
+    text-align: center;
+    color: var(--white) !important;
+}
+
+/* Navbar */
+.main-navbar {
+    background: var(--primary-bg);
+    text-transform: uppercase;
+}
+
+.main-navbar ul li a {
+    color: var(--white);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    color: var(--secondary-bg);
+    /* text-transform: uppercase; */
+    color: var(--white);
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 25px;
+    padding-top: 0.5rem;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-brand span {
+    color: var(--secondary-bg);
+}
+
+.navbar-brand p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    color: #c79f07;
+    text-shadow: 0px 1px 3px #454a47;
+}
+
+.main-navbar .nav-item {
+    padding-inline: 1rem;
+}
+
+.main-navbar .nav-link {
+    /* transition: all 0.3s ease-in-out; */
+    padding: 0.2rem 1rem;
+}
+
+.main-navbar .nav-link.active,
+.main-navbar .nav-link:hover {
+    border-bottom: 2px solid var(--secondary-bg);
+    color: var(--white);
+    /* transform: scale(1.01); */
+}
+/* .nav-link:hover {
+    opacity: 1;
+  }
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-bg);
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+} */
+
+.room-reser-heading {
+    padding: 3rem 0;
+    background-color: var(--secondary-bg);
+    text-align: center;
+    color: var(--white);
+
+}
+
+.room-reser-heading h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+/* Slider */
+.carousel-caption {
+    top: 9rem;
+    color: var(--secondary-bg);
+    text-transform: uppercase;
+    font-family: var(--font-family2)
+}
+
+.carousel-caption h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 12px;
+}
+
+.carousel-caption h3 {
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 9px;
+}
+
+.carousel-indicators {
+    top: 20rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Reception Card */
+.reception {
+    text-align: center;
+    /* padding: 6rem 4rem; */
+    font-family: var(--font-family2);
+    letter-spacing: 5px;
+}
+
+.reception-card-nav {
+    margin-top: 3rem;
+}
+
+.reception .reception-heading h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.reception .reception-heading p {
+    color: var(--secondary-bg);
+    font-weight: 600;
+}
+
+.reception-ui {
+    background-color: var(--grey);
+    /* border: 1px solid black; */
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reception-ui h6 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    transition: 0.1s all ease-out;
+}
+
+.reception-ui h6::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 5px;
+    background-color: var(--secondary-bg);
+    margin-bottom: 1rem;
+    transition: 0.1s all ease-out;
+}
+
+.reception-hd {
+    opacity: 0;
+    transition: 0.1s all ease-out;
+}
+
+.reception-card .fa {
+    font-size: 5rem;
+    color: var(--primary-bg);
+}
+
+.reception-ui li {
+    padding: 2rem 1rem;
+    width: calc(100vw - 10px);
+    border-left: 1px solid var(--border-clr);
+    transition: 0.3s ease-in-out;
+}
+
+.reception-ui li:last-child {
+    border-right: 1px solid var(--border-clr);
+}
+
+.reception-ui li:hover {
+    background-color: var(--primary-bg);
+    color: var(--white);
+}
+
+.reception-ui li:hover .reception-hd {
+    opacity: 1;
+    color: var(--secondary-bg);
+    text-transform: uppercase;
+}
+
+.reception-ui li:hover .reception-card .fa {
+    color: var(--secondary-bg);
+}
+
+.reception-ui li:hover h6 {
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.reception-ui li:hover h6::before {
+    top: 30px;
+    margin-top: 1rem;
+    padding-bottom: 0;
+    background: var(--white);
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 4rem 25rem 4rem;
+    background: var(--grey);
+    text-align: center;
+}
+
+.about-head {
+    padding-inline: 2rem;
+    margin-bottom: 2rem;
+    line-height: 30px;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img2 {
+    position: absolute;
+    left: 50px;
+    bottom: -270px;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-text-container {
+    position: absolute;
+    right: 15px;
+    /* width: 55%;
+    margin-left: auto; */
+    border: 10px solid black;
+    margin-block: 3rem;
+    padding: 2rem 4.5rem;
+}
+
+.about-text p {
+    margin-bottom: 0;
+}
+
+.about-text-heading {
+    background: var(--primary-bg);
+    color: var(--secondary-bg);
+    font-family: var(--font-family2);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.about-text-sub {
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.9);
+    color: var(--white);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Service Section */
+.service-section {
+    background: url('images/services.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 4rem;
+}
+
+.service-list {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    padding: 1rem 4rem;
+    transition: all 0.5s ease;
+}
+
+.brdr-lft {
+    border-right: 1px solid #d4d3d3;
+}
+
+.service-list .fa {
+    color: var(--secondary-bg);
+}
+
+.service-list .fa-clock-o,
+.service-list .fa-credit-card {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.service-list h3 {
+    font-family: var(--font-family2);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.service-list-text {
+    text-align: start;
+}
+
+.service-list:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Team Section */
+.team-members {
+    padding: 4rem 2rem;
+}
+
+.team-members .team-info {
+    padding: 1rem 4rem;
+}
+
+.team-members>ul {
+    margin-left: 14rem;
+}
+
+.team-members>ul .img-link {
+    display: inline-block;
+    padding: 10px 15px;
+    opacity: 0.5;
+}
+
+.team-members>ul li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+    user-select: none;
+}
+
+.team-members>ul .img-link.active-class {
+    opacity: 1;
+}
+
+.team-details {
+    width: 80%;
+    margin-left: 1.5rem;
+    margin-block: 3rem;
+}
+
+.team-details h2 {
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.team-details span {
+    text-transform: uppercase;
+    color: #7d7a7a;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.team-details p {
+    line-height: 30px;
+    margin-block: 1.4rem;
+    color: #337ab7;
+    letter-spacing: 0.5px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    margin-block: 3rem;
+}
+
+.gallery-section .gallery-grid {
+    position: relative;
+}
+
+.gallery-section .gallery-grid .gallery-transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 36, 83, 0.6);
+    transform: scale(0);
+    transition: all 0.7s ease-in-out;
+}
+
+.gallery-transition p {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.gallery-transition .img-hvr {
+    padding-top: 5rem;
+}
+
+.gallery-grid:hover .gallery-transition {
+    transform: scale(1);
+    color: var(--white);
+    opacity: 1;
+}
+
+/* Room Section */
+.room-section {
+    padding: 4rem 1rem;
+}
+
+.room-section .card {
+    transition: all 0.5s ease;
+}
+
+.room-section .card:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    position: absolute;
+    text-align: end;
+    right: 0px;
+    bottom: 110px;
+    background: var(--primary-bg);
+    padding: 0.7rem 1.5rem;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.card-body {
+    padding: 2rem 1rem;
+}
+
+.card-body .star-list {
+    padding-inline: 0.1rem;
+}
+
+.card-body .price-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body .price-select h3 {
+    font-size: 1.8rem;
+    font-family: var(--font-family2);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card-body .price-select span {
+    color: #ef0404;
+}
+
+.price-select a {
+    background: var(--secondary-bg);
+    width: 130px;
+    padding: 0.4rem 1.3rem;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #ecbf11;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact_section {
+    background: url('images/contact.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    padding: 6rem;
+    font-family: var(--font-family2);
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 1.5rem 2rem;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    color: var(--secondary-bg);
+    text-align: center;
+}
+
+.name-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-block: 0.5rem;
+}
+
+.name-form input {
+    width: 100%;
+    padding: 0.5rem;
+    outline: 0;
+    border: 1px solid var(--white);
+    background: transparent;
+}
+
+.name-form input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .5);
+}
+
+.contact-container h6 {
+    margin-block: 0.8rem;
+    font-size: 1.1rem;
+    font-family: var(--font-family1);
+    /* font-weight: 500; */
+}
+
+.contact-container h6 span {
+    color: var(--secondary-bg);
+    font-weight: 600;
+}
+
+.contact-container .social-links,
+.team-details .social-links {
+    margin-left: 0;
+}
+
+.contact-container .social-links .nav-item:nth-child(1),
+.team-details .social-links .nav-item:nth-child(1) {
+    margin-left: 0;
+}
+
+.contact-container iframe {
+    width: 100%;
+    height: 190px;
+    margin-top: 1rem;
+}
+
+footer {
+    background: var(--primary-bg);
+    text-align: center;
+    color: var(--white);
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer span {
+    color: var(--secondary-bg);
+    font-weight: 500;
+}
