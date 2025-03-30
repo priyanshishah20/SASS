@@ -1,0 +1,617 @@
+$priClr: #13547a;
+$secClr: rgb(128, 208, 199);
+$pribg: #f0f8ff;
+$white: #fff;
+$txtClr: #717275;
+$titleFont: "Montserrat", sans-serif;
+$font16: 1rem;
+$font14: 0.875rem;
+$font12: 0.75rem;
+$font10: 0.625rem;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $secClr;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+}
+
+.sec1 {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+
+    .sec1-main {
+        padding-top: 8rem;
+
+        .sec1-text {
+            font-size: 1.4rem;
+            color: $priClr;
+            font-weight: 500;
+            padding-bottom: 1.5rem;
+        }
+
+        .searchDiv {
+            background-color: $white;
+            border-radius: 50px;
+            padding: 0.8rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+
+            span {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+
+            input {
+                border: 0;
+                box-shadow: none;
+                width: 70%;
+            }
+
+            input:focus-visible {
+                outline: 0;
+            }
+        }
+    }
+}
+
+.bi-back {
+    font-size: 1.75rem;
+    color: #212529;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #212529 !important;
+    display: block;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 208, 199, 0.35);
+    font-family: $titleFont;
+    font-weight: 500;
+    padding-block: 0.5rem;
+    position: fixed;
+    width: 100%;
+
+    ul {
+        display: flex;
+        margin: 1rem 5rem;
+
+        li {
+            a {
+                color: $white;
+                padding: 0.5rem;
+                margin: 1rem;
+                text-transform: uppercase;
+                font-size: $font14;
+            }
+
+            .nav-active,
+            a:hover {
+                color: $priClr;
+                font-weight: 500;
+            }
+        }
+
+    }
+}
+
+.icon {
+    display: block;
+
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        background: $white;
+        text-align: center;
+        transition: all 0.3s ease;
+        color: $txtClr;
+
+        .fa {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.icon a:hover,
+.btn-learnmore:hover {
+    background: $priClr;
+}
+
+.icon a:hover .fa,
+.btn-learnmore:hover {
+    color: $white;
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: $white;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.sec3,
+.sec4,
+.sec5,
+.sec6,
+.sec7 {
+    padding-block: 6rem;
+}
+
+.sec2 {
+    background: $secClr;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.boxshadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card {
+    border-radius: 1.25rem;
+    border: 0;
+    transition: all 0.3s ease;
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .card-text {
+        color: $txtClr;
+        font-size: 1.1rem;
+    }
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-body,
+.card-img-overlay {
+    padding: 1.5rem;
+}
+
+.btn-learnmore {
+    border-radius: 50px;
+    background: $secClr;
+    color: $white;
+    padding: 0.65rem 1.25rem;
+    font-weight: 500;
+}
+
+.social-icons {
+    padding-top: 7.5rem;
+
+    ul {
+        li {
+            padding: 0.5rem;
+        }
+    }
+
+    a {
+        width: 35px;
+        height: 35px;
+        display: block;
+        line-height: 35px;
+        border-radius: 50%;
+        text-align: center;
+        background: $secClr;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        background: $priClr;
+    }
+
+    .fa {
+        color: $white;
+    }
+
+    .fa-bookmark-o {
+        font-size: 1.6rem;
+    }
+}
+
+.cardstart {
+    position: relative;
+    top: -7rem;
+}
+
+.sec-bg {
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    border-radius: 1.25rem;
+}
+
+.sec3 {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ecf3f2;
+        margin-bottom: 2rem;
+
+        button {
+            padding: 1rem 1.5rem;
+            color: $txtClr;
+            font-size: 1.2rem;
+            outline: none;
+            border: none;
+            background: inherit;
+            transition: all 0.3s;
+            font-weight: 500;
+            margin-right: 0.8rem;
+        }
+
+        button:hover,
+        .active {
+            color: $priClr;
+            border-bottom: 1px solid $priClr;
+        }
+    }
+
+    .card {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        text-align: left;
+    }
+
+    .img-block {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 1.5rem;
+    }
+
+    .social-icons {
+        padding-top: 3.5rem;
+    }
+}
+
+.sec4 {
+    background-image: url('img/sec4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: $white;
+
+    .sec-bg {
+        border-radius: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+
+        .workicon {
+            background-color: $secClr;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+
+            i {
+                padding: 1.2rem;
+                border: 4px solid $white;
+                border-radius: 50%;
+                font-size: 1.5rem;
+            }
+        }
+
+        .workicon:hover {
+            background-color: $priClr;
+        }
+
+        .work-info {
+            margin-bottom: 2.5rem;
+            text-align: left;
+
+            h5 {
+                font-size: 1.85rem;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                font-size: 1.15rem;
+            }
+        }
+
+        .worklink {
+            display: inline-block;
+
+            span {
+                font-size: 1.2rem;
+            }
+
+            button {
+                border: 2px solid $secClr;
+                background: transparent;
+                color: $secClr;
+            }
+
+            button:hover {
+                background-color: $secClr;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.accordion-item,
+.accordion-item:first-of-type {
+    .accordion-button {
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+.accordion-item {
+    border: 0;
+}
+
+.accordion-item:last-of-type {
+    .accordion-button.collapsed {
+        border-radius: 50px;
+    }
+}
+
+.accordion-body {
+    color: $txtClr;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $priClr;
+}
+
+.sec6 {
+    background-color: $pribg;
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        padding-bottom: 1rem;
+    }
+
+    p {
+        color: $txtClr;
+        font-size: 1.2rem;
+
+        a {
+            color: $secClr;
+        }
+    }
+}
+
+.sec7 {
+    border-bottom: 10px solid $secClr;
+    position: relative;
+
+    h4 {
+        color: $priClr;
+    }
+
+    a {
+        color: $secClr;
+    }
+
+    a:hover {
+        color: $txtClr;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 0 0 150px 150px;
+        border-color: transparent transparent $secClr transparent;
+
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .mainNav{
+        ul{
+            margin: 1rem;
+            li{
+                a{
+                    font-size: 0.8rem;
+                    margin: 0 0.4rem;
+                }
+            }
+        }
+    }
+    .logo, .bi-back{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .sec3, .sec4, .sec5, .sec6, .sec7{
+        padding-block: 4rem;
+    }
+    .sec1 {
+        .sec1-main {
+            .sec1-text {
+                font-size: 1.2rem;
+            }
+
+            .searchDiv {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .btn-learnmore {
+        padding: 0.5rem 1rem;
+    }
+
+    .social-icons {
+        padding-top: 5rem;
+
+        a {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    .sec3 {
+        ul {
+            button {
+                font-size: 1rem;
+            }
+        }
+
+        .img-block {
+            margin-top: 1rem;
+            height: 170px;
+        }
+
+        .social-icons {
+            padding-top: 2rem;
+        }
+    }
+
+    .card {
+        .card-title {
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+        }
+    }
+
+    .sec4 {
+        .container {
+            .work-info {
+                h5 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .accordion-item,
+    .accordion-item:first-of-type {
+        .accordion-button {
+            font-size: 1.1rem;
+        }
+    }
+    .accordion-body{
+        font-size: 0.9rem;
+    }
+    .sec6{
+        h3{
+            margin-top: 1rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .sec7{
+        .row{
+            .col-md-6{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
